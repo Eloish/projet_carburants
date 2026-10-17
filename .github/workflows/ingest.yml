@@ -1,0 +1,38 @@
+name: Ingestion quotidienne des prix des carburants
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # tous les jours à 06:00 UTC
+  workflow_dispatch:       # permet de le lancer à la main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ingestion-carburants
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install boto3 requests python-dotenv
+
+      - name: Lancer l'ingestion vers S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+        run: python ingestion/ingest.py
