@@ -1,0 +1,41 @@
+[0m21:55:34.198250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A1733A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A19AC7610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A19AC7ED0>]}
+
+
+============================== 21:55:34.204646 | 0399495b-5393-4e67-bc66-7e1009572cf8 ==============================
+[0m21:55:34.204646 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:55:34.205810 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ishimwe elodie\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init dbt_carburants', 'log_path': 'logs'}
+[0m21:55:34.250398 [info ] [MainThread]: A project called dbt_carburants already exists here.
+[0m21:55:34.252369 [debug] [MainThread]: Command `dbt init` succeeded at 21:55:34.252150 after 0.59 seconds
+[0m21:55:34.252957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A19ACED70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A19985D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A19AFE140>]}
+[0m21:55:34.253592 [debug] [MainThread]: Flushing usage events
+[0m21:55:35.257411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:58:33.387134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027123EFA120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271266DBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271266DBB10>]}
+
+
+============================== 01:58:33.411235 | 1357b75f-a77a-4e6c-ab9f-b9dcf04d8870 ==============================
+[0m01:58:33.411235 [info ] [MainThread]: Running with dbt=1.12.0
+[0m01:58:33.412447 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ishimwe elodie\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'logs'}
+[0m01:58:33.413326 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:58:33.415312 [debug] [MainThread]: Command `dbt run` failed at 01:58:33.414938 after 0.76 seconds
+[0m01:58:33.416934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271266C3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271266B5C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271266CBDF0>]}
+[0m01:58:33.419999 [debug] [MainThread]: Flushing usage events
+[0m01:58:35.370995 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:53:52.888843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308A79A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308CF67D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308CF67B10>]}
+
+
+============================== 17:53:53.073019 | 320368f9-b71b-4a4b-9b13-e5d800b70f4b ==============================
+[0m17:53:53.073019 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:53:53.076532 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ishimwe elodie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'logs'}
+[0m17:53:53.078371 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:53:53.100884 [debug] [MainThread]: Command `dbt run` failed at 17:53:53.100419 after 1.01 seconds
+[0m17:53:53.101864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308CF53950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308CF45C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308CF5BDF0>]}
+[0m17:53:53.103084 [debug] [MainThread]: Flushing usage events
+[0m17:53:55.538670 [debug] [MainThread]: An error was encountered while trying to flush usage events

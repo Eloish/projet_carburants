@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Données brutes importées pour le projet carburants"
+    schema: public
+    tables:
+      - name: carburants_raw
+        description: "Table brute contenant les stations et les prix"
+
+models:
+  - name: silver_stations
+    description: "Stations nettoyées avec coordonnées et métadonnées de base"
+    columns:
+      - name: id
+        description: "Identifiant de la station"
+        tests:
+          - not_null
+      - name: ville
+        description: "Ville de la station"
+      - name: cp
+        description: "Code postal"
+      - name: departement
+        description: "Département"
+      - name: region
+        description: "Région"
+      - name: latitude
+        description: "Latitude nettoyée"
+      - name: longitude
+        description: "Longitude nettoyée"
+      - name: lat_gps
+        description: "Coordonnée latitude prête pour la géolocalisation"
+      - name: lon_gps
+        description: "Coordonnée longitude prête pour la géolocalisation"
+      - name: date_collecte
+        description: "Date de collecte de la ligne"
+
+  - name: silver_prices
+    description: "Prix des carburants transformés en format vertical"
+    columns:
+      - name: id
+        description: "Identifiant de la station"
+        tests:
+          - not_null
+      - name: carburant
+        description: "Nom du carburant"
+      - name: prix
+        description: "Prix du carburant"

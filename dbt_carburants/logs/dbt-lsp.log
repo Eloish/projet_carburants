@@ -1,0 +1,63 @@
+==================== 2026-10-17T14:51:42.679649Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-17T14:51:42.721885Z | c069837c-fd83-4af4-af79-e79f8026c351 ====================
+14:51:42.722631 [info ]: Starting dbt LSP server
+14:51:42.725144 [info ]: Connecting to LSP client on port 8000
+14:51:42.735001 [info ]: Successfully connected to LSP client
+14:51:42.735079 [info ]: Creating LSP service...
+14:51:42.755605 [info ]: Creating LSP server...
+14:51:42.755667 [info ]: Starting LSP server...
+14:51:55.033732 [info ]: Loading ~/.dbt/profiles.yml
+14:51:55.105773 [info ]: Loading ~/.dbt/profiles.yml
+14:51:55.119757 [info ]: Loading ~/.dbt/profiles.yml
+14:51:55.129711 [info ]: Loading ~/.dbt/profiles.yml
+14:51:55.139550 [info ]: Loading ~/.dbt/profiles.yml
+14:52:01.820996 [debug]: Ignoring unsupported LSP notification
+14:58:29.304482 [info ]: Loading ~/.dbt/profiles.yml
+14:58:46.716036 [info ]: Loading ~/.dbt/profiles.yml
+15:00:14.920272 [info ]: Loading ~/.dbt/profiles.yml
+15:05:02.521475 [info ]: Loading ~/.dbt/profiles.yml
+15:05:24.915778 [info ]: Loading ~/.dbt/profiles.yml
+15:05:34.889923 [info ]: Loading ~/.dbt/profiles.yml
+15:16:57.569033 [debug]: Ignoring unsupported LSP notification
+15:17:27.312513 [debug]: Ignoring unsupported LSP notification
+15:17:27.480860 [debug]: Ignoring unsupported LSP notification
+15:17:27.481029 [debug]: Ignoring unsupported LSP notification
+15:17:42.210423 [debug]: Ignoring unsupported LSP notification
+15:17:42.290864 [debug]: Ignoring unsupported LSP notification
+15:17:42.291050 [debug]: Ignoring unsupported LSP notification
+15:21:18.227198 [debug]: Ignoring unsupported LSP notification
+15:21:18.227532 [debug]: Ignoring unsupported LSP notification
+15:21:18.346748 [debug]: Ignoring unsupported LSP notification
+15:21:39.173500 [debug]: Ignoring unsupported LSP notification
+15:21:39.176088 [debug]: Ignoring unsupported LSP notification
+15:21:39.359393 [debug]: Ignoring unsupported LSP notification
+15:24:09.116864 [info ]: Loading ~/.dbt/profiles.yml
+15:24:12.041409 [debug]: Ignoring unsupported LSP notification
+15:24:12.188487 [debug]: Ignoring unsupported LSP notification
+15:24:12.189497 [debug]: Ignoring unsupported LSP notification
+15:24:34.257870 [debug]: Ignoring unsupported LSP notification
+15:24:34.296391 [debug]: Ignoring unsupported LSP notification
+15:24:34.427571 [debug]: Ignoring unsupported LSP notification
+15:26:28.434251 [debug]: Ignoring unsupported LSP notification
+15:26:28.465849 [debug]: Ignoring unsupported LSP notification
+15:26:28.505544 [debug]: Ignoring unsupported LSP notification
+15:27:42.308852 [debug]: Ignoring unsupported LSP notification
+15:27:42.464453 [debug]: Ignoring unsupported LSP notification
+15:27:42.472590 [debug]: Ignoring unsupported LSP notification
+15:39:26.367700 [info ]: Loading ~/.dbt/profiles.yml
+15:39:44.618469 [info ]: Loading ~/.dbt/profiles.yml
+15:40:25.520912 [debug]: Ignoring unsupported LSP notification
+15:40:25.950867 [info ]: Loading ~/.dbt/profiles.yml
+15:43:15.136809 [info ]: Loading ~/.dbt/profiles.yml
+15:46:38.168568 [info ]: Loading ~/.dbt/profiles.yml
+15:47:23.546345 [info ]: Loading ~/.dbt/profiles.yml
+15:47:50.272648 [debug]: Ignoring unsupported LSP notification
+15:52:14.897855 [info ]: Loading ~/.dbt/profiles.yml
+15:52:22.752304 [info ]: Loading ~/.dbt/profiles.yml
+15:53:13.531413 [info ]: Loading ~/.dbt/profiles.yml
+15:53:13.747818 [info ]: Loading ~/.dbt/profiles.yml
+15:53:15.507918 [info ]: Loading ~/.dbt/profiles.yml
+15:53:19.224954 [debug]: Ignoring unsupported LSP notification
+15:53:23.616057 [info ]: Loading ~/.dbt/profiles.yml
+15:54:30.692274 [info ]: Loading ~/.dbt/profiles.yml
+15:54:32.294098 [info ]: Loading ~/.dbt/profiles.yml
