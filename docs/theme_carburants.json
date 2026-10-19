@@ -1,0 +1,34 @@
+{
+  "name": "Carburants",
+  "dataColors": ["#0E9AA7", "#F2A541", "#0F2A43", "#E4572E", "#3BB273", "#7C8DA6", "#8E6BBF", "#B8C4D0"],
+  "background": "#FFFFFF",
+  "foreground": "#1E293B",
+  "tableAccent": "#0F2A43",
+  "good": "#3BB273",
+  "neutral": "#F2A541",
+  "bad": "#E4572E",
+  "maximum": "#E4572E",
+  "center": "#F2A541",
+  "minimum": "#3BB273",
+  "null": "#B8C4D0",
+  "textClasses": {
+    "callout": { "fontSize": 28, "fontFace": "Segoe UI Semibold", "color": "#0F2A43" },
+    "title": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#1E293B" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#1E293B" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#475569" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [{ "show": true, "color": { "solid": { "color": "#E2E8F0" } }, "radius": 8 }],
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#1E293B" } }, "fontSize": 12, "fontFamily": "Segoe UI Semibold" }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F4F6F8" } }, "transparency": 0 }]
+      }
+    }
+  }
+}
