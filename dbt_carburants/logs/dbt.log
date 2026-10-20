@@ -7295,3 +7295,939 @@ drop table if exists "carburants"."gold"."gold_stations_prices__dbt_backup" casc
 [0m17:54:35.001032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE8CA3A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE89CB4650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE8CD88590>]}
 [0m17:54:35.002908 [debug] [MainThread]: Flushing usage events
 [0m17:54:36.927677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:08.351468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6849DA120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6871B3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6871B3D90>]}
+
+
+============================== 21:10:08.404029 | 6ab23c20-ec90-47de-be1c-c0595c4aef68 ==============================
+[0m21:10:08.404029 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:10:08.408110 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ishimwe elodie\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\ishimwe elodie\\Desktop\\Luminy\\Nouveau dossier\\projet-carburants\\dbt_carburants\\logs'}
+[0m21:10:10.209739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6850F5940>]}
+[0m21:10:10.637198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C682F49480>]}
+[0m21:10:10.647123 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m21:10:12.827458 [debug] [MainThread]: checksum: f2b7e952cbd10a45fd095afc2a910c2b1a575737220b2096ff63b1100c995e18, vars: {}, profile: dbt_carburants, target: dev, version: 1.12.0
+[0m21:10:13.734726 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m21:10:13.737592 [debug] [MainThread]: Partial parsing: added file: projet_carburants://tests\assert_gold_quotidien_unique.sql
+[0m21:10:13.739009 [debug] [MainThread]: Partial parsing: added file: projet_carburants://tests\assert_prix_plausibles.sql
+[0m21:10:13.744886 [debug] [MainThread]: Partial parsing: added file: projet_carburants://tests\assert_silver_prices_unique.sql
+[0m21:10:15.556427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687A12250>]}
+[0m21:10:16.000682 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\manifest.json
+[0m21:10:16.015371 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\semantic_manifest.json
+[0m21:10:16.335674 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\osi_document.json
+[0m21:10:16.592541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687BC7C50>]}
+[0m21:10:16.595846 [info ] [MainThread]: Found 5 models, 3 data tests, 1 source, 478 macros
+[0m21:10:16.597987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687BD3AF0>]}
+[0m21:10:16.611225 [info ] [MainThread]: 
+[0m21:10:16.617243 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:10:16.627985 [info ] [MainThread]: 
+[0m21:10:16.634082 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:10:16.661108 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants_gold'
+[0m21:10:16.686026 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants_silver'
+[0m21:10:17.539149 [debug] [ThreadPool]: Using postgres connection "list_carburants_gold"
+[0m21:10:17.544539 [debug] [ThreadPool]: Using postgres connection "list_carburants_silver"
+[0m21:10:17.546771 [debug] [ThreadPool]: On list_carburants_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants_silver"} */
+select
+      'carburants' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'carburants' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'carburants' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+    union all
+    select distinct
+     'carburants' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'silver'
+  
+[0m21:10:17.545768 [debug] [ThreadPool]: On list_carburants_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants_gold"} */
+select
+      'carburants' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'gold'
+    union all
+    select
+      'carburants' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'gold'
+    union all
+    select
+      'carburants' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'gold'
+    union all
+    select distinct
+     'carburants' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'gold'
+  
+[0m21:10:17.547754 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:17.552355 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:17.877073 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.325 seconds
+[0m21:10:17.878029 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.330 seconds
+[0m21:10:17.880916 [debug] [ThreadPool]: On list_carburants_gold: ROLLBACK
+[0m21:10:17.883751 [debug] [ThreadPool]: On list_carburants_silver: ROLLBACK
+[0m21:10:17.886857 [debug] [ThreadPool]: On list_carburants_silver: Close
+[0m21:10:17.887823 [debug] [ThreadPool]: On list_carburants_gold: Close
+[0m21:10:17.903880 [debug] [MainThread]: Using postgres connection "master"
+[0m21:10:17.904971 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m21:10:17.907324 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:10:18.023094 [debug] [MainThread]: SQL status: SELECT 0 in 0.115 seconds
+[0m21:10:18.025832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ab23c20-ec90-47de-be1c-c0595c4aef68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687EDCFC0>]}
+[0m21:10:18.026925 [debug] [MainThread]: On master: ROLLBACK
+[0m21:10:18.030288 [debug] [MainThread]: On master: COMMIT
+[0m21:10:18.031332 [debug] [MainThread]: Using postgres connection "master"
+[0m21:10:18.032043 [debug] [MainThread]: On master: COMMIT
+[0m21:10:18.033426 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m21:10:18.034298 [debug] [MainThread]: On master: Close
+[0m21:10:18.096507 [debug] [Thread-3 (]: Began running node test.projet_carburants.assert_silver_prices_unique
+[0m21:10:18.099635 [debug] [Thread-1 (]: Began running node test.projet_carburants.assert_gold_quotidien_unique
+[0m21:10:18.101026 [debug] [Thread-2 (]: Began running node test.projet_carburants.assert_prix_plausibles
+[0m21:10:18.102131 [info ] [Thread-3 (]: 3 of 3 START test assert_silver_prices_unique .................................. [RUN]
+[0m21:10:18.107536 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.projet_carburants.assert_silver_prices_unique'
+[0m21:10:18.104056 [info ] [Thread-1 (]: 1 of 3 START test assert_gold_quotidien_unique ................................. [RUN]
+[0m21:10:18.108872 [debug] [Thread-3 (]: Began compiling node test.projet_carburants.assert_silver_prices_unique
+[0m21:10:18.110464 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.projet_carburants.assert_gold_quotidien_unique'
+[0m21:10:18.105938 [info ] [Thread-2 (]: 2 of 3 START test assert_prix_plausibles ....................................... [RUN]
+[0m21:10:18.142991 [debug] [Thread-1 (]: Began compiling node test.projet_carburants.assert_gold_quotidien_unique
+[0m21:10:18.146177 [debug] [Thread-3 (]: Writing injected SQL for node "test.projet_carburants.assert_silver_prices_unique"
+[0m21:10:18.148280 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.projet_carburants.assert_prix_plausibles'
+[0m21:10:18.158831 [debug] [Thread-1 (]: Writing injected SQL for node "test.projet_carburants.assert_gold_quotidien_unique"
+[0m21:10:18.160694 [debug] [Thread-2 (]: Began compiling node test.projet_carburants.assert_prix_plausibles
+[0m21:10:18.168918 [debug] [Thread-2 (]: Writing injected SQL for node "test.projet_carburants.assert_prix_plausibles"
+[0m21:10:18.174792 [debug] [Thread-3 (]: Began executing node test.projet_carburants.assert_silver_prices_unique
+[0m21:10:18.202571 [debug] [Thread-1 (]: Began executing node test.projet_carburants.assert_gold_quotidien_unique
+[0m21:10:18.244797 [debug] [Thread-1 (]: Writing runtime sql for node "test.projet_carburants.assert_gold_quotidien_unique"
+[0m21:10:18.246873 [debug] [Thread-3 (]: Writing runtime sql for node "test.projet_carburants.assert_silver_prices_unique"
+[0m21:10:18.249263 [debug] [Thread-2 (]: Began executing node test.projet_carburants.assert_prix_plausibles
+[0m21:10:18.263296 [debug] [Thread-2 (]: Writing runtime sql for node "test.projet_carburants.assert_prix_plausibles"
+[0m21:10:18.267957 [debug] [Thread-3 (]: Using postgres connection "test.projet_carburants.assert_silver_prices_unique"
+[0m21:10:18.273791 [debug] [Thread-3 (]: On test.projet_carburants.assert_silver_prices_unique: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "test.projet_carburants.assert_silver_prices_unique"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  -- Renvoie les combinaisons station x carburant x jour présentes plusieurs fois.
+-- Le test passe s'il ne renvoie aucune ligne.
+select
+    station_id,
+    carburant,
+    snapshot_date,
+    count(*) as nb
+from "carburants"."silver"."silver_prices"
+group by
+    station_id,
+    carburant,
+    snapshot_date
+having count(*) > 1
+  
+  
+      
+    ) dbt_internal_test
+[0m21:10:18.269397 [debug] [Thread-1 (]: Using postgres connection "test.projet_carburants.assert_gold_quotidien_unique"
+[0m21:10:18.276059 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:10:18.278427 [debug] [Thread-1 (]: On test.projet_carburants.assert_gold_quotidien_unique: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "test.projet_carburants.assert_gold_quotidien_unique"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  -- Renvoie les combinaisons jour x département x carburant présentes plusieurs fois.
+-- Le test passe s'il ne renvoie aucune ligne.
+select
+    snapshot_date,
+    code_departement,
+    carburant,
+    count(*) as nb
+from "carburants"."gold"."gold_prix_quotidien_dept"
+group by
+    snapshot_date,
+    code_departement,
+    carburant
+having count(*) > 1
+  
+  
+      
+    ) dbt_internal_test
+[0m21:10:18.280614 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:10:18.281944 [debug] [Thread-2 (]: Using postgres connection "test.projet_carburants.assert_prix_plausibles"
+[0m21:10:18.285210 [debug] [Thread-2 (]: On test.projet_carburants.assert_prix_plausibles: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "test.projet_carburants.assert_prix_plausibles"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+-- Renvoie les prix hors de la plage plausible (en euros par litre).
+-- Le test passe s'il ne renvoie aucune ligne.
+select
+    station_id,
+    carburant,
+    snapshot_date,
+    prix
+from "carburants"."silver"."silver_prices"
+where prix < 0.5
+    or prix > 4
+  
+  
+      
+    ) dbt_internal_test
+[0m21:10:18.286454 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:10:18.398043 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.117 seconds
+[0m21:10:18.411523 [debug] [Thread-1 (]: On test.projet_carburants.assert_gold_quotidien_unique: ROLLBACK
+[0m21:10:18.413426 [debug] [Thread-1 (]: On test.projet_carburants.assert_gold_quotidien_unique: Close
+[0m21:10:18.415429 [info ] [Thread-1 (]: 1 of 3 PASS assert_gold_quotidien_unique ....................................... [[32mPASS[0m in 0.31s]
+[0m21:10:18.418952 [debug] [Thread-1 (]: Finished running node test.projet_carburants.assert_gold_quotidien_unique
+[0m21:10:18.467229 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.181 seconds
+[0m21:10:18.470590 [debug] [Thread-2 (]: On test.projet_carburants.assert_prix_plausibles: ROLLBACK
+[0m21:10:18.477100 [debug] [Thread-2 (]: On test.projet_carburants.assert_prix_plausibles: Close
+[0m21:10:18.478918 [info ] [Thread-2 (]: 2 of 3 PASS assert_prix_plausibles ............................................. [[32mPASS[0m in 0.33s]
+[0m21:10:18.493936 [debug] [Thread-2 (]: Finished running node test.projet_carburants.assert_prix_plausibles
+[0m21:10:18.579399 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.304 seconds
+[0m21:10:18.587136 [debug] [Thread-3 (]: On test.projet_carburants.assert_silver_prices_unique: ROLLBACK
+[0m21:10:18.594441 [debug] [Thread-3 (]: On test.projet_carburants.assert_silver_prices_unique: Close
+[0m21:10:18.598528 [info ] [Thread-3 (]: 3 of 3 PASS assert_silver_prices_unique ........................................ [[32mPASS[0m in 0.49s]
+[0m21:10:18.603175 [debug] [Thread-3 (]: Finished running node test.projet_carburants.assert_silver_prices_unique
+[0m21:10:18.610570 [debug] [MainThread]: On master: COMMIT
+[0m21:10:18.612457 [debug] [MainThread]: Using postgres connection "master"
+[0m21:10:18.613259 [debug] [MainThread]: On master: COMMIT
+[0m21:10:18.614563 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:10:18.722837 [debug] [MainThread]: SQL status: COMMIT in 0.108 seconds
+[0m21:10:18.723800 [debug] [MainThread]: On master: Close
+[0m21:10:18.725105 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:10:18.725952 [debug] [MainThread]: Connection 'list_carburants_gold' was properly closed.
+[0m21:10:18.726930 [debug] [MainThread]: Connection 'list_carburants_silver' was properly closed.
+[0m21:10:18.727834 [debug] [MainThread]: Connection 'test.projet_carburants.assert_silver_prices_unique' was properly closed.
+[0m21:10:18.729357 [debug] [MainThread]: Connection 'test.projet_carburants.assert_gold_quotidien_unique' was properly closed.
+[0m21:10:18.730507 [debug] [MainThread]: Connection 'test.projet_carburants.assert_prix_plausibles' was properly closed.
+[0m21:10:18.734189 [info ] [MainThread]: 
+[0m21:10:18.740470 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 2.10 seconds (2.10s).
+[0m21:10:18.746581 [debug] [MainThread]: Command end result
+[0m21:10:18.836503 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\manifest.json
+[0m21:10:18.848143 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\semantic_manifest.json
+[0m21:10:18.858598 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\osi_document.json
+[0m21:10:18.899865 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\run_results.json
+[0m21:10:18.901043 [info ] [MainThread]: 
+[0m21:10:18.906114 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:10:18.907988 [info ] [MainThread]: 
+[0m21:10:18.911050 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m21:10:18.921313 [debug] [MainThread]: Command `dbt test` succeeded at 21:10:18.918208 after 11.68 seconds
+[0m21:10:18.925847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C686F5BE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687FA01B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C687FA0B50>]}
+[0m21:10:18.927426 [debug] [MainThread]: Flushing usage events
+[0m21:10:20.634345 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-10-18T22:54:45.741946Z | 01a15139-81c2-7382-9d72-891ca778a07d ====================
+22:55:06.198177 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [20.5s]
+[0m22:58:05.412774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE886EA120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8AEBFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8AEBFB10>]}
+
+
+============================== 22:58:05.430435 | 7c669247-426c-40f0-942a-2e2a5bc7709a ==============================
+[0m22:58:05.430435 [info ] [MainThread]: Running with dbt=1.12.0
+[0m22:58:05.431803 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ishimwe elodie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\ishimwe elodie\\Desktop\\Luminy\\Nouveau dossier\\projet-carburants\\dbt_carburants\\logs'}
+[0m22:58:06.106855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE88E05940>]}
+[0m22:58:06.329300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE86C65480>]}
+[0m22:58:06.334203 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m22:58:07.353105 [debug] [MainThread]: checksum: f2b7e952cbd10a45fd095afc2a910c2b1a575737220b2096ff63b1100c995e18, vars: {}, profile: dbt_carburants, target: dev, version: 1.12.0
+[0m22:58:08.020506 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:58:08.021397 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:58:08.021804 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:58:08.041227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B5A2250>]}
+[0m22:58:08.342030 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\manifest.json
+[0m22:58:08.353114 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\semantic_manifest.json
+[0m22:58:08.533416 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\osi_document.json
+[0m22:58:08.610676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B4D65D0>]}
+[0m22:58:08.611503 [info ] [MainThread]: Found 5 models, 3 data tests, 1 source, 478 macros
+[0m22:58:08.612445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B577CB0>]}
+[0m22:58:08.619863 [info ] [MainThread]: 
+[0m22:58:08.621113 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:58:08.627348 [info ] [MainThread]: 
+[0m22:58:08.633528 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:58:08.649217 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants'
+[0m22:58:08.662398 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants'
+[0m22:58:09.434022 [debug] [ThreadPool]: Using postgres connection "list_carburants"
+[0m22:58:09.434842 [debug] [ThreadPool]: Using postgres connection "list_carburants"
+[0m22:58:09.435454 [debug] [ThreadPool]: On list_carburants: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:58:09.436170 [debug] [ThreadPool]: On list_carburants: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:58:09.437041 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:09.437804 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:09.616232 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.178 seconds
+[0m22:58:09.617106 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.180 seconds
+[0m22:58:09.623089 [debug] [ThreadPool]: On list_carburants: Close
+[0m22:58:09.626926 [debug] [ThreadPool]: On list_carburants: Close
+[0m22:58:09.635937 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants_silver'
+[0m22:58:09.647423 [debug] [ThreadPool]: Using postgres connection "list_carburants_silver"
+[0m22:58:09.648630 [debug] [ThreadPool]: On list_carburants_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants_silver"} */
+select
+      'carburants' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'carburants' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'carburants' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+    union all
+    select distinct
+     'carburants' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'silver'
+  
+[0m22:58:09.649489 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:09.659131 [debug] [ThreadPool]: Acquiring new postgres connection 'list_carburants_gold'
+[0m22:58:09.665215 [debug] [ThreadPool]: Using postgres connection "list_carburants_gold"
+[0m22:58:09.669484 [debug] [ThreadPool]: On list_carburants_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "list_carburants_gold"} */
+select
+      'carburants' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'gold'
+    union all
+    select
+      'carburants' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'gold'
+    union all
+    select
+      'carburants' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'gold'
+    union all
+    select distinct
+     'carburants' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'gold'
+  
+[0m22:58:09.670445 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:09.913151 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.263 seconds
+[0m22:58:09.916243 [debug] [ThreadPool]: On list_carburants_silver: ROLLBACK
+[0m22:58:09.917845 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.247 seconds
+[0m22:58:09.922567 [debug] [ThreadPool]: On list_carburants_gold: ROLLBACK
+[0m22:58:09.923936 [debug] [ThreadPool]: On list_carburants_silver: Close
+[0m22:58:09.926349 [debug] [ThreadPool]: On list_carburants_gold: Close
+[0m22:58:09.984397 [debug] [MainThread]: Using postgres connection "master"
+[0m22:58:09.985687 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m22:58:09.988636 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:58:10.264140 [debug] [MainThread]: SQL status: SELECT 0 in 0.275 seconds
+[0m22:58:10.266679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B852EA0>]}
+[0m22:58:10.269439 [debug] [MainThread]: On master: ROLLBACK
+[0m22:58:10.275428 [debug] [MainThread]: On master: COMMIT
+[0m22:58:10.276473 [debug] [MainThread]: Using postgres connection "master"
+[0m22:58:10.277328 [debug] [MainThread]: On master: COMMIT
+[0m22:58:10.278843 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:58:10.279986 [debug] [MainThread]: On master: Close
+[0m22:58:10.342808 [debug] [Thread-2 (]: Began running node model.projet_carburants.silver_stations
+[0m22:58:10.344595 [debug] [Thread-1 (]: Began running node model.projet_carburants.silver_prices
+[0m22:58:10.346106 [info ] [Thread-2 (]: 2 of 5 START sql table model silver.silver_stations ............................ [RUN]
+[0m22:58:10.360306 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.projet_carburants.silver_stations'
+[0m22:58:10.361402 [debug] [Thread-2 (]: Began compiling node model.projet_carburants.silver_stations
+[0m22:58:10.350714 [info ] [Thread-1 (]: 1 of 5 START sql table model silver.silver_prices .............................. [RUN]
+[0m22:58:10.421641 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.projet_carburants.silver_prices'
+[0m22:58:10.449210 [debug] [Thread-1 (]: Began compiling node model.projet_carburants.silver_prices
+[0m22:58:10.470071 [debug] [Thread-2 (]: Writing injected SQL for node "model.projet_carburants.silver_stations"
+[0m22:58:10.477061 [debug] [Thread-1 (]: Writing injected SQL for node "model.projet_carburants.silver_prices"
+[0m22:58:10.480066 [debug] [Thread-2 (]: Began executing node model.projet_carburants.silver_stations
+[0m22:58:10.512808 [debug] [Thread-1 (]: Began executing node model.projet_carburants.silver_prices
+[0m22:58:11.895665 [debug] [Thread-1 (]: Writing runtime sql for node "model.projet_carburants.silver_prices"
+[0m22:58:11.882237 [debug] [Thread-2 (]: Writing runtime sql for node "model.projet_carburants.silver_stations"
+[0m22:58:11.915749 [debug] [Thread-1 (]: Using postgres connection "model.projet_carburants.silver_prices"
+[0m22:58:11.928798 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_prices"} */
+
+  
+    
+
+  create  table "carburants"."silver"."silver_prices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'gazole' as carburant,
+    cast(gazole_prix as double precision) as prix,
+    cast(gazole_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where gazole_prix is not null
+
+union all
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'sp95' as carburant,
+    cast(sp95_prix as double precision) as prix,
+    cast(sp95_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where sp95_prix is not null
+
+union all
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'sp98' as carburant,
+    cast(sp98_prix as double precision) as prix,
+    cast(sp98_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where sp98_prix is not null
+
+union all
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'e10' as carburant,
+    cast(e10_prix as double precision) as prix,
+    cast(e10_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where e10_prix is not null
+
+union all
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'e85' as carburant,
+    cast(e85_prix as double precision) as prix,
+    cast(e85_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where e85_prix is not null
+
+union all
+
+
+select
+    id as station_id,
+    snapshot_date,
+    'gplc' as carburant,
+    cast(gplc_prix as double precision) as prix,
+    cast(gplc_maj as timestamp) as date_maj
+from "carburants"."public"."carburants_raw"
+where gplc_prix is not null
+
+
+  );
+  
+[0m22:58:11.923685 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.silver_stations"
+[0m22:58:11.930029 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:58:11.943771 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_stations"} */
+
+  
+    
+
+  create  table "carburants"."silver"."silver_stations__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with source_data as (
+    select
+        id,
+        snapshot_date,
+        nullif(trim(adresse), '') as adresse,
+        nullif(trim(ville), '') as ville,
+        nullif(trim(cp), '') as cp,
+        nullif(trim(departement), '') as departement,
+        nullif(trim(region), '') as region,
+        nullif(trim(code_departement), '') as code_departement,
+
+        -- Type de station (A = Autoroute, R = Route)
+        nullif(trim(pop), '') as type_station,
+
+        -- Services disponibles
+        nullif(trim(services_service), '') as services,
+
+        -- Coordonnées GPS nettoyées
+        case
+            when abs(cast(latitude as double precision)) > 1000
+                then cast(latitude as double precision) / 100000.0
+            else cast(latitude as double precision)
+        end as latitude,
+
+        case
+            when abs(cast(longitude as double precision)) > 1000
+                then cast(longitude as double precision) / 100000.0
+            else cast(longitude as double precision)
+        end as longitude,
+
+        nullif(trim(carburants_disponibles), '') as carburants_disponibles,
+        nullif(trim(horaires_automate_24_24), '') as horaires_automate_24_24,
+        gazole_prix, sp95_prix, sp98_prix, e10_prix, e85_prix, gplc_prix
+    from "carburants"."public"."carburants_raw"
+    where id is not null
+)
+
+-- Une seule ligne par station : la plus récente
+select distinct on (id)
+    id,
+    adresse,
+    ville,
+    cp,
+    departement,
+    region,
+    code_departement,
+    type_station,
+    services,
+    latitude,
+    longitude,
+    carburants_disponibles,
+    horaires_automate_24_24,
+    snapshot_date as derniere_vue,
+    current_timestamp as date_collecte
+from source_data
+where latitude is not null
+    and longitude is not null
+    and (
+        gazole_prix is not null
+        or sp95_prix is not null
+        or sp98_prix is not null
+        or e10_prix is not null
+        or e85_prix is not null
+        or gplc_prix is not null
+    )
+order by id, snapshot_date desc
+  );
+  
+[0m22:58:11.956005 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:58:17.593885 [debug] [Thread-2 (]: SQL status: SELECT 9878 in 5.638 seconds
+[0m22:58:17.990034 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.silver_stations"
+[0m22:58:18.050467 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_stations"} */
+alter table "carburants"."silver"."silver_stations" rename to "silver_stations__dbt_backup"
+[0m22:58:18.075459 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.023 seconds
+[0m22:58:18.135350 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.silver_stations"
+[0m22:58:18.163141 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_stations"} */
+alter table "carburants"."silver"."silver_stations__dbt_tmp" rename to "silver_stations"
+[0m22:58:18.182311 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:58:18.760018 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: COMMIT
+[0m22:58:18.762482 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.silver_stations"
+[0m22:58:18.764626 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: COMMIT
+[0m22:58:18.790844 [debug] [Thread-2 (]: SQL status: COMMIT in 0.022 seconds
+[0m22:58:18.861559 [debug] [Thread-2 (]: Applying DROP to: "carburants"."silver"."silver_stations__dbt_backup"
+[0m22:58:18.959132 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.silver_stations"
+[0m22:58:18.960868 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_stations"} */
+drop table if exists "carburants"."silver"."silver_stations__dbt_backup" cascade
+[0m22:58:19.355079 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.393 seconds
+[0m22:58:19.370592 [debug] [Thread-2 (]: On model.projet_carburants.silver_stations: Close
+[0m22:58:19.428479 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B6B34D0>]}
+[0m22:58:19.432023 [info ] [Thread-2 (]: 2 of 5 OK created sql table model silver.silver_stations ....................... [[32mSELECT 9878[0m in 9.02s]
+[0m22:58:19.474961 [debug] [Thread-2 (]: Finished running node model.projet_carburants.silver_stations
+[0m22:58:22.982948 [debug] [Thread-1 (]: SQL status: SELECT 126983 in 11.053 seconds
+[0m22:58:22.991881 [debug] [Thread-1 (]: Using postgres connection "model.projet_carburants.silver_prices"
+[0m22:58:22.993094 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_prices"} */
+alter table "carburants"."silver"."silver_prices" rename to "silver_prices__dbt_backup"
+[0m22:58:22.997819 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:58:23.007726 [debug] [Thread-1 (]: Using postgres connection "model.projet_carburants.silver_prices"
+[0m22:58:23.009606 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_prices"} */
+alter table "carburants"."silver"."silver_prices__dbt_tmp" rename to "silver_prices"
+[0m22:58:23.016122 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m22:58:23.020173 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: COMMIT
+[0m22:58:23.023012 [debug] [Thread-1 (]: Using postgres connection "model.projet_carburants.silver_prices"
+[0m22:58:23.028910 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: COMMIT
+[0m22:58:23.038893 [debug] [Thread-1 (]: SQL status: COMMIT in 0.009 seconds
+[0m22:58:23.043458 [debug] [Thread-1 (]: Applying DROP to: "carburants"."silver"."silver_prices__dbt_backup"
+[0m22:58:23.046399 [debug] [Thread-1 (]: Using postgres connection "model.projet_carburants.silver_prices"
+[0m22:58:23.048044 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.silver_prices"} */
+drop table if exists "carburants"."silver"."silver_prices__dbt_backup" cascade
+[0m22:58:23.071432 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.021 seconds
+[0m22:58:23.074401 [debug] [Thread-1 (]: On model.projet_carburants.silver_prices: Close
+[0m22:58:23.078043 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B895860>]}
+[0m22:58:23.083765 [info ] [Thread-1 (]: 1 of 5 OK created sql table model silver.silver_prices ......................... [[32mSELECT 126983[0m in 12.66s]
+[0m22:58:23.089822 [debug] [Thread-1 (]: Finished running node model.projet_carburants.silver_prices
+[0m22:58:23.095506 [debug] [Thread-3 (]: Began running node model.projet_carburants.gold_prix_quotidien_dept
+[0m22:58:23.098568 [debug] [Thread-4 (]: Began running node model.projet_carburants.gold_stations_prices
+[0m22:58:23.099876 [debug] [Thread-2 (]: Began running node model.projet_carburants.gold_stats_region
+[0m22:58:23.096995 [info ] [Thread-3 (]: 3 of 5 START sql table model gold.gold_prix_quotidien_dept ..................... [RUN]
+[0m22:58:23.106057 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.projet_carburants.gold_prix_quotidien_dept'
+[0m22:58:23.102875 [info ] [Thread-4 (]: 4 of 5 START sql table model gold.gold_stations_prices ......................... [RUN]
+[0m22:58:23.107611 [debug] [Thread-3 (]: Began compiling node model.projet_carburants.gold_prix_quotidien_dept
+[0m22:58:23.104595 [info ] [Thread-2 (]: 5 of 5 START sql table model gold.gold_stats_region ............................ [RUN]
+[0m22:58:23.120107 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.projet_carburants.gold_stations_prices'
+[0m22:58:23.140225 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.projet_carburants.silver_stations, now model.projet_carburants.gold_stats_region)
+[0m22:58:23.185607 [debug] [Thread-3 (]: Writing injected SQL for node "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:23.188301 [debug] [Thread-4 (]: Began compiling node model.projet_carburants.gold_stations_prices
+[0m22:58:23.194218 [debug] [Thread-2 (]: Began compiling node model.projet_carburants.gold_stats_region
+[0m22:58:23.207987 [debug] [Thread-4 (]: Writing injected SQL for node "model.projet_carburants.gold_stations_prices"
+[0m22:58:23.236763 [debug] [Thread-2 (]: Writing injected SQL for node "model.projet_carburants.gold_stats_region"
+[0m22:58:23.241672 [debug] [Thread-3 (]: Began executing node model.projet_carburants.gold_prix_quotidien_dept
+[0m22:58:23.275948 [debug] [Thread-3 (]: Writing runtime sql for node "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:23.282306 [debug] [Thread-4 (]: Began executing node model.projet_carburants.gold_stations_prices
+[0m22:58:23.307470 [debug] [Thread-4 (]: Writing runtime sql for node "model.projet_carburants.gold_stations_prices"
+[0m22:58:23.309387 [debug] [Thread-3 (]: Using postgres connection "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:23.312000 [debug] [Thread-2 (]: Began executing node model.projet_carburants.gold_stats_region
+[0m22:58:23.324533 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_prix_quotidien_dept"} */
+
+  
+    
+
+  create  table "carburants"."gold"."gold_prix_quotidien_dept__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+-- Une ligne par jour x département x carburant : la série temporelle du projet
+select
+    p.snapshot_date,
+    s.code_departement,
+    s.departement,
+    s.region,
+    p.carburant,
+    count(distinct s.id) as nb_stations,
+    round(avg(p.prix)::numeric, 4) as prix_moyen,
+    round((percentile_cont(0.5) within group (order by p.prix))::numeric, 4) as prix_median
+from "carburants"."silver"."silver_stations" s
+inner join "carburants"."silver"."silver_prices" p
+    on s.id = p.station_id
+where p.prix between 0.5 and 4  -- écarte les prix aberrants
+group by
+    p.snapshot_date,
+    s.code_departement,
+    s.departement,
+    s.region,
+    p.carburant
+  );
+  
+[0m22:58:23.334329 [debug] [Thread-2 (]: Writing runtime sql for node "model.projet_carburants.gold_stats_region"
+[0m22:58:23.335857 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:58:23.337844 [debug] [Thread-4 (]: Using postgres connection "model.projet_carburants.gold_stations_prices"
+[0m22:58:23.341736 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stations_prices"} */
+
+  
+    
+
+  create  table "carburants"."gold"."gold_stations_prices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+select
+    s.id,
+    s.adresse,
+    s.ville,
+    s.cp,
+    s.departement,
+    s.region,
+    s.code_departement,
+    s.type_station,
+    s.services,
+    s.latitude,
+    s.longitude,
+    p.carburant,
+    p.prix,
+    p.date_maj,
+    p.snapshot_date,
+    s.date_collecte
+from "carburants"."silver"."silver_stations" s
+inner join "carburants"."silver"."silver_prices" p
+    on s.id = p.station_id
+  );
+  
+[0m22:58:23.346820 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:58:23.349895 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.gold_stats_region"
+[0m22:58:23.350767 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stats_region"} */
+
+  
+    
+
+  create  table "carburants"."gold"."gold_stats_region__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+select
+    p.snapshot_date,
+    s.region,
+    s.departement,
+    s.code_departement,
+    s.type_station,
+    p.carburant,
+    count(distinct s.id) as nb_stations,
+    round(avg(p.prix)::numeric, 3) as prix_moyen,
+    min(p.prix) as prix_min,
+    max(p.prix) as prix_max
+from "carburants"."silver"."silver_stations" s
+inner join "carburants"."silver"."silver_prices" p
+    on s.id = p.station_id
+group by
+    p.snapshot_date,
+    s.region,
+    s.departement,
+    s.code_departement,
+    s.type_station,
+    p.carburant
+  );
+  
+[0m22:58:23.364579 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:58:26.358867 [debug] [Thread-2 (]: SQL status: SELECT 3868 in 2.994 seconds
+[0m22:58:26.366173 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.gold_stats_region"
+[0m22:58:26.367353 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stats_region"} */
+alter table "carburants"."gold"."gold_stats_region" rename to "gold_stats_region__dbt_backup"
+[0m22:58:26.371793 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:58:26.382360 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.gold_stats_region"
+[0m22:58:26.383738 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stats_region"} */
+alter table "carburants"."gold"."gold_stats_region__dbt_tmp" rename to "gold_stats_region"
+[0m22:58:26.404201 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.016 seconds
+[0m22:58:26.410709 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: COMMIT
+[0m22:58:26.415274 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.gold_stats_region"
+[0m22:58:26.418056 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: COMMIT
+[0m22:58:26.428523 [debug] [Thread-2 (]: SQL status: COMMIT in 0.009 seconds
+[0m22:58:26.432933 [debug] [Thread-2 (]: Applying DROP to: "carburants"."gold"."gold_stats_region__dbt_backup"
+[0m22:58:26.439287 [debug] [Thread-2 (]: Using postgres connection "model.projet_carburants.gold_stats_region"
+[0m22:58:26.450365 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stats_region"} */
+drop table if exists "carburants"."gold"."gold_stats_region__dbt_backup" cascade
+[0m22:58:26.466333 [debug] [Thread-3 (]: SQL status: SELECT 2297 in 3.130 seconds
+[0m22:58:26.477344 [debug] [Thread-3 (]: Using postgres connection "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:26.483513 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_prix_quotidien_dept"} */
+alter table "carburants"."gold"."gold_prix_quotidien_dept" rename to "gold_prix_quotidien_dept__dbt_backup"
+[0m22:58:26.494064 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:58:26.519531 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.064 seconds
+[0m22:58:26.522873 [debug] [Thread-2 (]: On model.projet_carburants.gold_stats_region: Close
+[0m22:58:26.535069 [debug] [Thread-3 (]: Using postgres connection "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:26.549499 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_prix_quotidien_dept"} */
+alter table "carburants"."gold"."gold_prix_quotidien_dept__dbt_tmp" rename to "gold_prix_quotidien_dept"
+[0m22:58:26.551618 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8BA945F0>]}
+[0m22:58:26.566602 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:58:26.569958 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: COMMIT
+[0m22:58:26.584500 [debug] [Thread-3 (]: Using postgres connection "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:26.565677 [info ] [Thread-2 (]: 5 of 5 OK created sql table model gold.gold_stats_region ....................... [[32mSELECT 3868[0m in 3.42s]
+[0m22:58:26.587082 [debug] [Thread-2 (]: Finished running node model.projet_carburants.gold_stats_region
+[0m22:58:26.585762 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: COMMIT
+[0m22:58:26.612767 [debug] [Thread-3 (]: SQL status: COMMIT in 0.021 seconds
+[0m22:58:26.629963 [debug] [Thread-3 (]: Applying DROP to: "carburants"."gold"."gold_prix_quotidien_dept__dbt_backup"
+[0m22:58:26.640157 [debug] [Thread-3 (]: Using postgres connection "model.projet_carburants.gold_prix_quotidien_dept"
+[0m22:58:26.649667 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_prix_quotidien_dept"} */
+drop table if exists "carburants"."gold"."gold_prix_quotidien_dept__dbt_backup" cascade
+[0m22:58:26.689495 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.038 seconds
+[0m22:58:26.696435 [debug] [Thread-3 (]: On model.projet_carburants.gold_prix_quotidien_dept: Close
+[0m22:58:26.700487 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B8EEB50>]}
+[0m22:58:26.702789 [info ] [Thread-3 (]: 3 of 5 OK created sql table model gold.gold_prix_quotidien_dept ................ [[32mSELECT 2297[0m in 3.59s]
+[0m22:58:26.706287 [debug] [Thread-3 (]: Finished running node model.projet_carburants.gold_prix_quotidien_dept
+[0m22:58:28.240886 [debug] [Thread-4 (]: SQL status: SELECT 126983 in 4.897 seconds
+[0m22:58:28.249258 [debug] [Thread-4 (]: Using postgres connection "model.projet_carburants.gold_stations_prices"
+[0m22:58:28.250036 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stations_prices"} */
+alter table "carburants"."gold"."gold_stations_prices" rename to "gold_stations_prices__dbt_backup"
+[0m22:58:28.252890 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:58:28.264723 [debug] [Thread-4 (]: Using postgres connection "model.projet_carburants.gold_stations_prices"
+[0m22:58:28.265657 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stations_prices"} */
+alter table "carburants"."gold"."gold_stations_prices__dbt_tmp" rename to "gold_stations_prices"
+[0m22:58:28.280392 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.009 seconds
+[0m22:58:28.297876 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: COMMIT
+[0m22:58:28.299167 [debug] [Thread-4 (]: Using postgres connection "model.projet_carburants.gold_stations_prices"
+[0m22:58:28.300910 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: COMMIT
+[0m22:58:28.371437 [debug] [Thread-4 (]: SQL status: COMMIT in 0.069 seconds
+[0m22:58:28.378967 [debug] [Thread-4 (]: Applying DROP to: "carburants"."gold"."gold_stations_prices__dbt_backup"
+[0m22:58:28.380592 [debug] [Thread-4 (]: Using postgres connection "model.projet_carburants.gold_stations_prices"
+[0m22:58:28.384035 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_carburants", "target_name": "dev", "node_id": "model.projet_carburants.gold_stations_prices"} */
+drop table if exists "carburants"."gold"."gold_stations_prices__dbt_backup" cascade
+[0m22:58:28.446319 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.061 seconds
+[0m22:58:28.449088 [debug] [Thread-4 (]: On model.projet_carburants.gold_stations_prices: Close
+[0m22:58:28.451532 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c669247-426c-40f0-942a-2e2a5bc7709a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B6EFE70>]}
+[0m22:58:28.452861 [info ] [Thread-4 (]: 4 of 5 OK created sql table model gold.gold_stations_prices .................... [[32mSELECT 126983[0m in 5.33s]
+[0m22:58:28.457079 [debug] [Thread-4 (]: Finished running node model.projet_carburants.gold_stations_prices
+[0m22:58:28.464848 [debug] [MainThread]: On master: COMMIT
+[0m22:58:28.465596 [debug] [MainThread]: Using postgres connection "master"
+[0m22:58:28.466180 [debug] [MainThread]: On master: COMMIT
+[0m22:58:28.470167 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:58:28.628411 [debug] [MainThread]: SQL status: COMMIT in 0.158 seconds
+[0m22:58:28.629403 [debug] [MainThread]: On master: Close
+[0m22:58:28.631128 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:58:28.633599 [debug] [MainThread]: Connection 'list_carburants' was properly closed.
+[0m22:58:28.635062 [debug] [MainThread]: Connection 'list_carburants' was properly closed.
+[0m22:58:28.640131 [debug] [MainThread]: Connection 'list_carburants_silver' was properly closed.
+[0m22:58:28.640868 [debug] [MainThread]: Connection 'list_carburants_gold' was properly closed.
+[0m22:58:28.645622 [debug] [MainThread]: Connection 'model.projet_carburants.gold_stats_region' was properly closed.
+[0m22:58:28.648375 [debug] [MainThread]: Connection 'model.projet_carburants.silver_prices' was properly closed.
+[0m22:58:28.649126 [debug] [MainThread]: Connection 'model.projet_carburants.gold_prix_quotidien_dept' was properly closed.
+[0m22:58:28.649761 [debug] [MainThread]: Connection 'model.projet_carburants.gold_stations_prices' was properly closed.
+[0m22:58:28.651757 [info ] [MainThread]: 
+[0m22:58:28.654573 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 20.02 seconds (20.02s).
+[0m22:58:28.665785 [debug] [MainThread]: Command end result
+[0m22:58:28.778042 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\manifest.json
+[0m22:58:28.818636 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\semantic_manifest.json
+[0m22:58:28.857129 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\osi_document.json
+[0m22:58:28.882453 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ishimwe elodie\Desktop\Luminy\Nouveau dossier\projet-carburants\dbt_carburants\target\run_results.json
+[0m22:58:28.883187 [info ] [MainThread]: 
+[0m22:58:28.884339 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:58:28.885878 [info ] [MainThread]: 
+[0m22:58:28.887079 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m22:58:28.889972 [debug] [MainThread]: Command `dbt run` succeeded at 22:58:28.889626 after 23.91 seconds
+[0m22:58:28.892776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B6D0530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE88CC3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE8B8BBAD0>]}
+[0m22:58:28.895269 [debug] [MainThread]: Flushing usage events
+[0m22:58:30.879984 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-10-19T21:41:28.149358Z | 01a1561c-c2ed-7e02-b8a5-7c1ea5e37b3a ====================
+21:41:48.840584 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [20.7s]
+==================== 2026-10-20T14:51:11.880464Z | 01a159cb-8205-7930-95df-a8459cafd7a3 ====================
+14:51:32.583010 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [20.7s]
