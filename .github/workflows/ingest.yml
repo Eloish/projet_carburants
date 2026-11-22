@@ -2,8 +2,11 @@ name: Ingestion quotidienne des prix des carburants
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # tous les jours à 06:00 UTC
-  workflow_dispatch:       # permet de le lancer à la main
+    # Heures en UTC (pas d'heure d'été). Minutes « décalées » pour éviter les créneaux pile à l'heure,
+    # où GitHub retarde le plus les workflows planifiés.
+    - cron: "23 5 * * *"    # exécution principale : 05:23 UTC (6 h 23 à Paris en hiver)
+    - cron: "47 11 * * *"   # exécution de secours : 11:47 UTC (12 h 47 à Paris en hiver)
+  workflow_dispatch:        # permet de le lancer à la main
 
 permissions:
   contents: read
